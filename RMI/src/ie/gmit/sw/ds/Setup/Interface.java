@@ -1,6 +1,8 @@
 package ie.gmit.sw.ds.Setup;
 
-import java.rmi.*;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.sql.SQLException;
 import java.util.List;
 
 import ie.gmit.sw.ds.Models.Booking;
@@ -8,12 +10,9 @@ import ie.gmit.sw.ds.Models.Booking;
 
 public interface Interface extends Remote{
 	
-	public void createCarHire(String q) throws RemoteException; // to create a booking
-	
-	public List<Booking> readCarHire() throws RemoteException; // to list all the bookings
-	
-	public void updateCarHire(String q) throws RemoteException; // to update an existing booking
-	
-	public void deleteCarHire(String q) throws RemoteException; // to delete an existing booking
+	public List<Booking> readCarHire() throws RemoteException, SQLException;
+	public List<Booking> writeCarHire(String input) throws RemoteException, SQLException;	
+	public List<Booking> updateCarHire(String input) throws RemoteException, SQLException;
+	public List<Booking> deleteCarHire(String input) throws RemoteException, SQLException;
 
 }

@@ -2,91 +2,112 @@
 package ie.gmit.sw.ds.Models;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 
-
+/**
+ * <p>Java class for anonymous complex type.
+ * 
+ * <p>The following schema fragment specifies the expected         content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="OrderID" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="OrderNumber" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
+ *         &lt;element name="car" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="cust" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Booking")
-public class Booking implements Serializable{
+@XmlType(name = "", propOrder = {
+    "orderID",
+    "startDate",
+    "endDate",
+    "carReg",
+    "cust"
+})
+@XmlRootElement(name = "booking")
+public class Booking implements Serializable {
 
-   
+    /**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-	@XmlAttribute(name = "vehicleId")
-    protected Integer vehicleId;
-    @XmlAttribute(name = "customerId")
-    protected Integer customerId;
-    @XmlAttribute(name = "bookingNumber", required = true)
-    protected String bookingNumber;
-    @XmlAttribute(name = "startDate", required = true)
+	@XmlElement(name = "BookingID")
+    protected int bookingID;
+    @XmlElement(name = "StartDate", required = true)
+    @XmlSchemaType(name = "StartDate")
     protected String startDate;
-    @XmlAttribute(name = "endDate", required = true)
+    @XmlElement(name = "EndDate", required = true)
+    @XmlSchemaType(name = "EndDate")
     protected String endDate;
-    @XmlAttribute(name = "bookingId", required = true)
-    protected int bookingId;
-
-
-    public Integer getVehicleId() {
-        return vehicleId;
-    }
-
+    protected int cust;
+    protected String carReg;
+	public Booking(int bookingID, String startDate, String endDate, int cust, String carReg) {
+		super();
+		this.bookingID = bookingID;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.cust = cust;
+		this.carReg = carReg;
+	}
+	public Booking() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getBookingID() {
+		return bookingID;
+	}
+	public void setBookingID(int bookingID) {
+		this.bookingID = bookingID;
+	}
+	public String getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	public String getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(String endDate) {
+		this.endDate = endDate;
+	}
+	public int getCust() {
+		return cust;
+	}
+	public void setCust(int cust) {
+		this.cust = cust;
+	}
+	public String getCarReg() {
+		return carReg;
+	}
+	public void setCarReg(String carReg) {
+		this.carReg = carReg;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
  
-    public void setVehicleId(Integer value) {
-        this.vehicleId = value;
-    }
-
-   
-    public Integer getCustomerId() {
-        return customerId;
-    }
-
-  
-    public void setCustomerId(Integer value) {
-        this.customerId = value;
-    }
-
-   
-    public String getBookingNumber() {
-        return bookingNumber;
-    }
-
-   
-    public void setBookingNumber(String value) {
-        this.bookingNumber = value;
-    }
-
-  
-    public String getStartDate() {
-        return startDate;
-    }
-
     
-    public void setStartDate(String value) {
-        this.startDate = value;
-    }
-
-   
-    public String getEndDate() {
-        return endDate;
-    }
-
-    
-    public void setEndDate(String value) {
-        this.endDate = value;
-    }
-
-   
-    public int getBookingId() {
-        return bookingId;
-    }
-
-   
-    public void setBookingId(int value) {
-        this.bookingId = value;
-    }
-
 }
+	
+  
