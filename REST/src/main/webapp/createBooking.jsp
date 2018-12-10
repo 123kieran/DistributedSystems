@@ -7,6 +7,20 @@
 <title>Create</title>
 </head>
 <body>
- <p><a href="index.jsp">Back to home menu</a></p>
+    <h2>Hire a Car</h2>
+    <i>Please fill ALL input boxes</i>
+    <form action="webapi/myresource/write" method="post">
+    	<br/> Start Date <br/>
+    	<input type="date" name="startDate">
+    	<br/> End Date <br/>
+	    <input type="date" name="endDate">
+	    <br/> Customer ID <br/>
+	    <input type="number" name="custID">
+	    <br/> Car Reg <br/>
+	    <input type="text" name="carReg">
+	    <br/><br/>
+	    <input type="submit" value="Submit">
+    </form>
+    <p><a href="index.jsp">Back to home menu</a>
 </body>
 </html>

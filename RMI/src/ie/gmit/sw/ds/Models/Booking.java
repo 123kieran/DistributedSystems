@@ -38,7 +38,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "orderID",
+    "bookingID",
     "startDate",
     "endDate",
     "carReg",
