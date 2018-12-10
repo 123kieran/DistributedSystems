@@ -59,6 +59,7 @@ The technologies used to create this project are:
 7. Right click on REST prject and Run As > Run on Server
     -The "index.jsp" menu should open in a new tab
 
-## Problems
-I ran into some problems when trying to run this system. I was getting errors saying that ports were already in use. I was unable to finish these problems before the deadline
+## References
+http://www.ntu.edu.sg/home/ehchua/programming/java/jdbc_basic.html?fbclid=IwAR1OGElX0HJtNlpfEnQP2ORBBfIRLys0fQWar-C5YAInMZkLCvzR52URg6o
+
 
