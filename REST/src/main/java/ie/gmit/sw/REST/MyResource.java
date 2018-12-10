@@ -36,7 +36,7 @@ public class MyResource {
     @Produces(MediaType.APPLICATION_XML)
     public List<Booking> writeIt(String input) throws MalformedURLException, RemoteException, Exception, SQLException {
 		Interface CarBookingService;
-    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/database");
+    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/carhiredatabase");
         return CarBookingService.writeCarHire(input);
     }
 	
@@ -45,7 +45,7 @@ public class MyResource {
     @Produces(MediaType.APPLICATION_XML)
     public List<Booking> updateIt(String input) throws MalformedURLException, RemoteException, Exception, SQLException {
 		Interface CarBookingService;
-    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/database");
+    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/carhiredatabase");
         return CarBookingService.updateCarHire(input);
     }
 	
@@ -54,7 +54,7 @@ public class MyResource {
     @Produces(MediaType.APPLICATION_XML)
     public List<Booking> deleteIt(String input) throws MalformedURLException, RemoteException, Exception, SQLException {
 		Interface CarBookingService;
-    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/database");
+    	CarBookingService = (Interface) Naming.lookup("rmi://127.0.0.1:1099/carhiredatabase");
         return CarBookingService.deleteCarHire(input);
     }
 	
