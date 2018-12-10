@@ -18,7 +18,7 @@ public class ServerSetup {
 		//Bind our remote object to the registry with the human-readable name "carBookingService"
 		Naming.rebind("carbooking", carBookingService);
 
-		// Print a message to standard
+		// Print a message
 		System.out.println("Server ready.");
 		
 	
