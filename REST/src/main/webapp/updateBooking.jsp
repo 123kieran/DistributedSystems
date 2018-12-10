@@ -2,7 +2,7 @@
 <body>
     <h2>Update an Order</h2>
     <i>Please specify Booking ID to update, edit appropriate fields</i>
-    <form action="webapi/myresource/update" method="post">
+    <form action="webapi/myresource/updateCarHire" method="post">
     	<br/> Booking ID <br/>
     	<input type="number" name="bookingID">
     	<br/>

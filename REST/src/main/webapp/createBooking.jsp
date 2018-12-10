@@ -9,7 +9,7 @@
 <body>
     <h2>Car Hire Booking</h2>
     <i>Please fill ALL input boxes</i>
-    <form action="webapi/myresource/write" method="post">
+    <form action="webapi/myresource/writeCarHire" method="post">
     	<br/> Start Date <br/>
     	<input type="date" name="startDate">
     	<br/> End Date <br/>
