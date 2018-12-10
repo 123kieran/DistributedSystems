@@ -12,30 +12,6 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
-/**
- * <p>Java class for anonymous complex type.
- * 
- * <p>The following schema fragment specifies the expected         content contained within this class.
- * 
- * <pre>
- * &lt;complexType&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="OrderID" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="OrderNumber" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="Date" type="{http://www.w3.org/2001/XMLSchema}date"/&gt;
- *         &lt;element name="car" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="cust" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
- * 
- * 
- */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "bookingID",
@@ -47,9 +23,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlRootElement(name = "booking")
 public class Booking implements Serializable {
 
-    /**
-	 * 
-	 */
+   
 	private static final long serialVersionUID = 1L;
 	@XmlElement(name = "BookingID")
     protected int bookingID;
