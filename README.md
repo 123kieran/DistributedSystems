@@ -43,10 +43,10 @@ Remote Object into the RMI registry using the name “databaseservice”.
 
 ## Technologies Used
 The technologies used to create this project are:
-Eclipse JEE
-Wamp
-MySQL
-Github
+1. Eclipse JEE
+2. Wamp
+3. MySQL
+4. Github
  
 ## How to run the program
 1. Start up Wamp
@@ -59,5 +59,6 @@ Github
 7. Right click on REST prject and Run As > Run on Server
     The "index.jsp" menu should open in a new tab
 
-## Resources
+## Problems
+I ran into some problems when trying to run this system. I was getting errors saying that ports were already in use. I was unable to finish these problems before the deadline
 
