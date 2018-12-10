@@ -34,6 +34,7 @@ public class Booking implements Serializable {
     protected String endDate;
     protected int cust;
     protected String carReg;
+    //constructor
 	public Booking(int bookingID, String startDate, String endDate, int cust, String carReg) {
 		super();
 		this.bookingID = bookingID;
@@ -46,6 +47,7 @@ public class Booking implements Serializable {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	//getters and setters
 	public int getBookingID() {
 		return bookingID;
 	}

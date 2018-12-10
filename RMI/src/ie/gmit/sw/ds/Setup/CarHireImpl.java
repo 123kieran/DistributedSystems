@@ -31,9 +31,9 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 		
 		List<Booking> carList = new ArrayList<Booking>();
 		
-		String selectQuery = "select * from bookings ORDER BY BookingID";
+		String selectQuery = "select * from bookings ORDER BY BookingID";//sql statement
 		
-		ResultSet rs = stat.executeQuery(selectQuery);
+		ResultSet rs = stat.executeQuery(selectQuery);//run query
 		
 		while(rs.next()){
 			int BookingID = rs.getInt("BookingID");
@@ -51,7 +51,7 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 			b.setCust(CustID);
 			b.setCarReg(CarReg);
 			
-			carList.add(b);
+			carList.add(b); // add to list
 		}
 		return carList;
 	}
@@ -80,9 +80,9 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 		
 		stat.executeUpdate(writeQuery);
 		
-		String selectQuery = "select * from bookings ORDER BY BookingID";
+		String selectQuery = "select * from bookings ORDER BY BookingID";//sql statement
 		
-		ResultSet rs = stat.executeQuery(selectQuery);
+		ResultSet rs = stat.executeQuery(selectQuery); //run query
 		
 		while(rs.next()){
 			int BookingID = rs.getInt("BookingID");
@@ -100,7 +100,7 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 			b.setCust(CustID);
 			b.setCarReg(CarReg);
 			
-			carList.add(b);
+			carList.add(b);//add to list
 		}
 		
 		return carList;
@@ -142,9 +142,9 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 		
 		stat.executeUpdate(updateQuery);
 		
-		String selectQuery = "select * from bookings ORDER BY BookingID";
+		String selectQuery = "select * from bookings ORDER BY BookingID";//sql statement
 		
-		ResultSet rs = stat.executeQuery(selectQuery);
+		ResultSet rs = stat.executeQuery(selectQuery);//run query
 		
 		while(rs.next()){
 			int BookingID = rs.getInt("BookingID");
@@ -162,7 +162,7 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 			o.setCust(CustID);
 			o.setCarReg(CarReg);
 			
-			carList.add(o);
+			carList.add(o);//add to list
 		}
 		
 		return carList;
@@ -178,11 +178,11 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 		
 		String deleteQuery = "DELETE FROM Bookings WHERE " + input + ";";
 		
-		stat.executeUpdate(deleteQuery);
+		stat.executeUpdate(deleteQuery);//delete query
 		
-		String selectQuery = "select * from bookings ORDER BY BookingID";
+		String selectQuery = "select * from bookings ORDER BY BookingID";//delete query
 		
-		ResultSet rs = stat.executeQuery(selectQuery);
+		ResultSet rs = stat.executeQuery(selectQuery);//run query
 		
 		while(rs.next()){
 			int BookingID = rs.getInt("BookingID");
@@ -200,7 +200,7 @@ public class CarHireImpl extends UnicastRemoteObject implements Interface {
 			b.setCust(CustID);
 			b.setCarReg(CarReg);
 			
-			carList.add(b);
+			carList.add(b);//add to list
 		}
 		
 		return carList;

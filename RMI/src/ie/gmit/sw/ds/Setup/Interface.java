@@ -9,7 +9,7 @@ import ie.gmit.sw.ds.Models.Booking;
 
 
 public interface Interface extends Remote{
-	
+	//create methods for read write update and delete
 	public List<Booking> readCarHire() throws RemoteException, SQLException;
 	public List<Booking> writeCarHire(String input) throws RemoteException, SQLException;	
 	public List<Booking> updateCarHire(String input) throws RemoteException, SQLException;
