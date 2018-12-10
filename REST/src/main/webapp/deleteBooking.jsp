@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h2>Delete an Order</h2>
+    <h2>Delete a Booking</h2>
     <i>Please Enter the order ID you wish to delete</i>
     <form action="webapi/myresource/delete" method="post">
     	<br/> Booking ID <br/>

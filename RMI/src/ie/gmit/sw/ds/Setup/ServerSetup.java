@@ -19,7 +19,7 @@ public class ServerSetup {
 		Naming.rebind("carbooking", carBookingService);
 
 		// Print a message
-		System.out.println("Server ready.");
+		System.out.println("Server is ready.");
 		
 	
 	}

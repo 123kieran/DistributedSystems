@@ -7,7 +7,7 @@
 <title>Create</title>
 </head>
 <body>
-    <h2>Hire a Car</h2>
+    <h2>Car Hire Booking</h2>
     <i>Please fill ALL input boxes</i>
     <form action="webapi/myresource/write" method="post">
     	<br/> Start Date <br/>
