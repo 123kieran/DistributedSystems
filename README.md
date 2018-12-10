@@ -55,9 +55,9 @@ The technologies used to create this project are:
 4. Download the project from Github
 5. Open the folder in Eclipse
 6. Right click on RMI project and Run As > Java Application
-    The console should show "Server is running"
+    -The console should show "Server is running"
 7. Right click on REST prject and Run As > Run on Server
-    The "index.jsp" menu should open in a new tab
+    -The "index.jsp" menu should open in a new tab
 
 ## Problems
 I ran into some problems when trying to run this system. I was getting errors saying that ports were already in use. I was unable to finish these problems before the deadline
