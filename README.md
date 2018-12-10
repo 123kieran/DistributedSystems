@@ -58,7 +58,19 @@ The technologies used to create this project are:
     -The console should show "Server is running"
 7. Right click on REST prject and Run As > Run on Server
     -The "index.jsp" menu should open in a new tab
+## Install JDBC
+    
+go to https://dev.mysql.com/downloads/connector/
 
-## Problems
-I ran into some problems when trying to run this system. I was getting errors saying that ports were already in use. I was unable to finish these problems before the deadline
+select Connector/J
+
+From dropdown select platform independent
+
+Unzip the file
+
+Add Jar file to project
+
+## References
+http://www.ntu.edu.sg/home/ehchua/programming/java/jdbc_basic.html?fbclid=IwAR1OGElX0HJtNlpfEnQP2ORBBfIRLys0fQWar-C5YAInMZkLCvzR52URg6o
+
 
